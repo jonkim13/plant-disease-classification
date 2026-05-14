@@ -92,7 +92,7 @@ def main() -> None:
         epochs=args.epochs,
         batch_size=args.batch_size,
     )
-    # Original notebook forgot to merge this — make sure best-model logic sees the CNN.
+
     results["Basic CNN"] = cnn_result
 
     print("\n===== Per-model accuracy =====")
