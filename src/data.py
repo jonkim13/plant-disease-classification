@@ -25,11 +25,16 @@ KAGGLE_DATASET_SLUG = "abdallahalidev/plantvillage-dataset"
 
 DATASET_HELP = (
     "Could not find the PlantVillage dataset.\n"
-    "See the 'Dataset Setup' section of README.md for two options:\n"
-    "  (A) Kaggle API:    https://www.kaggle.com/settings  -> API -> Create New Token\n"
-    "  (B) Manual:        download from "
-    "https://www.kaggle.com/datasets/abdallahalidev/plantvillage-dataset\n"
-    "                     and unzip into ./data/plantvillage_dataset/"
+    "\n"
+    "Set up a Kaggle API token (free, ~30 seconds):\n"
+    "  1. Go to https://www.kaggle.com/settings -> API -> Create New Token\n"
+    "  2. Move the downloaded kaggle.json to ~/.kaggle/:\n"
+    "       mkdir -p ~/.kaggle && mv ~/Downloads/kaggle.json ~/.kaggle/\n"
+    "       chmod 600 ~/.kaggle/kaggle.json\n"
+    "  3. Re-run this script.\n"
+    "\n"
+    "Or pass --data-dir pointing at a local copy of the\n"
+    "plantvillage_dataset/color/ folder."
 )
 
 
